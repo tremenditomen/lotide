@@ -8,21 +8,21 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 assertion failed ${actual} !==== ${expected}`);
   }
 };
-const assertArrayEqual = function (arr1, arr2) {
-  for (i = 0; i < arr1.length; i++) {
-    if (arr1[i]!==arr2[i]){
+// const assertArrayEqual = function (arr1, arr2) {
+//   for (i = 0; i < arr1.length; i++) {
+//     if (arr1[i]!==arr2[i]){
         
-        return false
-    }
+//         return false
+//     }
   
-  }  
-  return true 
-};
+//   }  
+//   return true 
+// };
 
 // TEST CODE
 
 const countOnly = (allItems, itemsToCount)=> {
-const results = []
+const results = {};
 for (const item of allItems){
     
     if (itemsToCount[item]){
