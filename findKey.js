@@ -12,15 +12,22 @@ const assertEqual = function(actual, expected) {
   
 
 
+
+  
+  
+
+
 const findKey = (object, callBack)=> {
-    const objectKeys = Object.keys(object);
-    for (const key in objectKeys) {
-      if (callBack(object[objectKeys[key]])) {
-        return objectKeys[key];
-      }
+    for (const key in object) {
+      if (callBack(object[key])) {
+        
+        console.log( key);
+     
     }
-    return undefined
+      console.log("undefined") 
   };
+    }
+  
 
 
 
