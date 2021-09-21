@@ -30,7 +30,7 @@ const eqArrays = function (arr1, arr2) {
       }else{
           for(let checking of object1keyarr){
               if (object1[checking]!==object2[checking]){
-                  console.log(`in the arrays:`)
+                  
                   if (Array.isArray(object1[checking]) && Array.isArray(object2[checking])){
                     if(eqArrays(object1[checking], object2[checking])===false){
                          return false
